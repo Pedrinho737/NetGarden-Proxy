@@ -83,6 +83,8 @@ BSON decoding
 
 This tool is intended for educational, debugging, and research purposes only.
 
+You need to install the PySide6 and PyMongo libraries (pip install pymongo) (pip install PySide6)
+
 ---
 
 ## Author
