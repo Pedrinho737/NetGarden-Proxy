@@ -3,11 +3,10 @@ Modern TCP/BSON proxy with GUI, packet inspection, spam filtering, and NetString
 
 To run Roxy, install the code (or just the .exe file) and execute it.
 
-Obsolete (Unless you want the source code)----------------------------------------------------------------------------------------------------
+Obsolete (Unless you want the sorce code.): (
 To run the proxy, do the following: "cd "Where you saved it:"\NetGarden-Proxy-main\NetGarden-Proxy-main" and then do: "python -m NetGarden.Main"
 
-And read the "Warning" tab; it's there in case you have an error with the libraries.
-----------------------------------------------------------------------------------------------------------------------------------------------
+And read the "Warning" tab; it's there in case you have an error with the libraries.)
 
 # NetGarden 🌱
 
@@ -91,9 +90,8 @@ BSON decoding
 
 This tool is intended for educational, debugging, and research purposes only.
 
-Obsolete (Unless you want the source code)--------------------------------------------------------
-You need to install the PySide6 and PyMongo libraries (pip install pymongo) (pip install PySide6)
---------------------------------------------------------------------------------------------------
+Obsolete (Unless you want the source code): 
+(You need to install the PySide6 and PyMongo libraries (pip install pymongo) (pip install PySide6))
 
 ---
 
