@@ -1,88 +1,124 @@
-# NetGarden-Proxy
-Modern TCP/BSON proxy with GUI, packet inspection, spam filtering, and NetStrings decoding. Currently supports Pixel Worlds (Beta).
-
-To run Roxy, install the code (or just the .exe file) and execute it.
-
-Obsolete (Unless you want the sorce code.): (
-To run the proxy, do the following: "cd "Where you saved it:"\NetGarden-Proxy-main\NetGarden-Proxy-main" and then do: "python -m NetGarden.Main"
-
-And read the "Warning" tab; it's there in case you have an error with the libraries.)
-
-# NetGarden 🌱
+# NetGarden Proxy 🌱
 
 NetGarden is a modern TCP/BSON proxy and packet inspector with a real-time graphical interface.
 
-It allows developers and researchers to visualize, inspect, and analyze network traffic in a clean and intuitive environment.
+It allows developers, researchers, and enthusiasts to visualize, inspect, and analyze network traffic in a clean, structured, and intuitive environment.
 
 Currently in Beta.
 
 ---
 
+## Overview
+
+NetGarden provides a powerful proxy and inspection system designed for clarity, usability, and extensibility. It enables real-time traffic analysis with structured packet decoding and visual inspection tools.
+
+It currently supports Pixel Worlds protocol analysis and is designed to support additional protocols in future releases.
+
+---
+
 ## Features
 
-• Real-time TCP proxy  
-• Full BSON packet decoding  
-• Live packet inspector with structured view  
-• Client and Server packet separation  
-• Packet linking (request ↔ response matching)  
-• Packet coloring and highlighting system  
-• Spam / heartbeat packet filtering  
-• NetStrings decoding mode (Beta)  
-• Built-in console and error viewer  
-• Auto-scroll and live packet updates  
-• Modern GUI built with PySide6  
+- Real-time TCP proxy  
+- Full BSON packet decoding  
+- NetStrings decoding support  
+- Live packet inspector with structured visualization  
+- Separate Client and Server packet streams  
+- Request ↔ Response packet linking  
+- Packet highlighting and color coding  
+- Spam and heartbeat packet filtering  
+- Built-in console and error viewer  
+- Auto-scroll and live updates  
+- Modern GUI built with PySide6  
 
 ---
 
 ## Pixel Worlds Support
 
-NetGarden currently supports Pixel Worlds protocol analysis.
+NetGarden currently supports analysis of the Pixel Worlds protocol, including:
 
-It correctly handles:
+- Length-prefixed BSON packets  
+- NetStrings packet identifiers  
+- Real-time traffic inspection  
 
-• Length-prefixed BSON packets  
-• NetStrings packet identifiers  
-• Real-time traffic inspection  
+Support for additional protocols is planned.
 
-Future versions will support additional protocols.
+---
+
+## Installation
+
+### Option 1 — Recommended (Executable)
+
+Download the latest executable from the Releases section and run:
+
+NetGardenProxy.exe
+
+No Python installation is required.
+
+---
+
+### Option 2 — Run from source
+
+Requirements:
+
+- Python 3.10+
+- PySide6
+- pymongo
+
+Install dependencies:
+
+pip install PySide6 pymongo
+
+Run the proxy:
+
+python -m NetGarden.Main
+
+---
+
+## Project Structure
+
+NetGarden/
+├── CORE/
+├── GUI/
+└── Main.py
 
 ---
 
 ## Current Status
 
-NetGarden is in Beta.
+NetGarden is currently in Beta.
 
-Core proxy and inspection systems are stable.
+Core proxy and packet inspection systems are stable.
 
-More features are planned, including:
+Planned features include:
 
-• Protocol plugins  
-• Packet editing and injection  
-• Advanced filtering  
-• Traffic recording and replay  
-• Multi-game support  
-
----
-
-## Purpose
-
-NetGarden was designed as a clean and powerful alternative to traditional packet proxies.
-
-It focuses on:
-
-• Clarity  
-• Performance  
-• Usability  
-• Extensibility  
+- Protocol plugin system  
+- Packet editing and injection  
+- Advanced filtering tools  
+- Traffic recording and replay  
+- Multi-protocol support  
 
 ---
 
 ## Tech Stack
 
-Python  
-PySide6  
-TCP sockets  
-BSON decoding  
+- Python  
+- PySide6 (GUI)  
+- TCP sockets  
+- BSON decoding  
+- pymongo BSON utilities  
+
+---
+
+## Purpose
+
+NetGarden was created as a modern, clean, and extensible alternative to traditional packet proxy tools.
+
+It focuses on:
+
+- Clarity  
+- Performance  
+- Usability  
+- Extensibility  
 
 ---
 
@@ -90,8 +126,7 @@ BSON decoding
 
 This tool is intended for educational, debugging, and research purposes only.
 
-Obsolete (Unless you want the source code): 
-(You need to install the PySide6 and PyMongo libraries (pip install pymongo) (pip install PySide6))
+Use responsibly.
 
 ---
 
